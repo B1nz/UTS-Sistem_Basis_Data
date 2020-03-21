@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:orientation="vertical"
+    android:background="@drawable/backg"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/logoutBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textSize="20dp"
+        android:textColor="#fff"
+        android:text="Logout"
+        android:background="@drawable/btn4" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/card"
+        android:elevation="10dp"
+        android:layout_margin="10dp"
+        android:padding="10dp">
+
+        <TableRow>
+            <TextView
+                android:text="Id User"
+                android:textColor="#000"
+                android:textSize="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1" />
+
+            <EditText
+                android:id="@+id/u_id"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20sp"
+                android:layout_marginStart="20sp"
+                android:width="150px" />
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:text="Nama User"
+                android:textColor="#000"
+                android:textSize="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1" />
+
+            <EditText
+                android:id="@+id/u_name"
+                android:width="200dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="2"
+                android:layout_marginStart="20sp"
+                android:layout_marginLeft="20sp"/>
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:text="Alamat Email"
+                android:textColor="#000"
+                android:textSize="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1" />
+
+            <EditText
+                android:id="@+id/u_email"
+                android:width="200dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="2"
+                android:layout_marginStart="20sp"
+                android:layout_marginLeft="20sp" />
+        </TableRow>
+
+    </TableLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="350sp"
+        android:layout_marginTop="20sp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/card"
+        android:elevation="10dp"
+        android:padding="10dp">
+
+        <ListView
+            android:id="@+id/listView"
+            android:layout_width="wrap_content"
+            android:layout_height="350sp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:background="@drawable/card"
+        android:padding="10dp"
+        android:elevation="10dp">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Save"
+            android:textColor="#fff"
+            android:background="@drawable/btn1"
+            android:onClick="saveRecord"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="View"
+            android:textColor="#fff"
+            android:background="@drawable/btn2"
+            android:onClick="viewRecord"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Update"
+            android:textColor="#fff"
+            android:background="@drawable/btn3"
+            android:onClick="updateRecord"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Delete"
+            android:textColor="#fff"
+            android:background="@drawable/btn4"
+            android:onClick="deleteRecord"/>
+    </LinearLayout>
+</LinearLayout>
